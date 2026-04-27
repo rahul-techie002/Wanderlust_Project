@@ -1,0 +1,48 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+    <!-- <div class="container my-5"> -->
+
+    <div class="row">
+        <% for(listing of listings){ %>
+            <div class="col-lg-8 offset-lg-2">
+                <h2>
+                    <%= listing.title %>
+                </h2>
+
+
+                <!-- Image Section -->
+                <div class="mb-4">
+                    <img src="<%= listing.image.url %>" class="img-fluid rounded" alt="<%= listing.title %>"
+                        style="object-fit: cover; height: 400px; width: 100%;">
+                </div>
+
+                <!-- Title -->
+                <!-- <h1 class="mb-3"><%= listing.title %></h1> -->
+
+                <!-- Location -->
+                <h5 class="text-muted mb-4">
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    <%= listing.location %>, <%= listing.country %>
+                </h5>
+
+                <!-- Price Section -->
+                <h2 class="text-danger mb-4">
+                    &#8377; <%= listing.price.toLocaleString("en-IN") %> <span class="fs-6 text-muted">/night</span>
+                </h2>
+
+                <!-- Description -->
+                <div class="mb-5">
+                    <h5 class="mb-3">About this listing</h5>
+
+                    <% if (listing.owner) { %>
+                        <p><i>owned by <%= listing.owner.username %></i></p>
+                        <% } %>
+
+                            <p class="text-muted lh-lg">
+
+                                <%= listing.description %>
+                            </p>
+                </div>
+            </div>
+        <% } %>
+    </div>
