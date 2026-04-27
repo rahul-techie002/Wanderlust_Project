@@ -24,6 +24,6 @@ that make code readable and provide modularity
 | Frontend     | HTML,CSS,JS
 | Backend      | Node.js, Express 
 | Database     | MongoDB  |
-| Authentication  passport
+| Authentication |passport
 | Deployment   | Render 
 
