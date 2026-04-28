@@ -29,16 +29,17 @@ that make code readable and provide modularity.
 
 ## 🛠 Deployment
 
-Deloyed on Render with via GitHub
+Deloyed/hosted on Render via GitHub
 
 Live Demo : https://wanderlust-project-vxti.onrender.com
 
 ## Project intalation
 
 1. Clone the repository
+   
+https://github.com/rahul-techie002/Wanderlust_Project.git
 
-
-2. Install dependencies
+3. Install dependencies
 
 npm install --legacy-peer-deps
 
