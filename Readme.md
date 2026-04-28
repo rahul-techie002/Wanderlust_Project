@@ -21,7 +21,7 @@ that make code readable and provide modularity.
 ## 🛠️ Tech Stack
 | Layer        | Technologies Used 
 |--------------|------------------
-| Frontend     | EJS,JS,CSS
+| Frontend     | EJS,JS
 | Backend      | Node.js, Express 
 | Database     | MongoDB  |
 | Authentication |passport
