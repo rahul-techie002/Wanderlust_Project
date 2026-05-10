@@ -9,21 +9,52 @@ The goal of this project is to showcase my skills in **frontend development, bac
 
 ## 🚀 Features
 - 🔐 **User Authentication** – Sign up, login, and secure sessions  
-- 🏠 **Property Listings** – Add, edit, and browse available rentals  
+- 🏠 **Property Listings** – Add, edit, and browse available Listing  
 
 
 
 ## MVC Architechture
 This project is an Airbnb clone built using the MVC architecture
-that make code readable and provide modularity
+that make code readable and provide modularity.
 
 
 ## 🛠️ Tech Stack
 | Layer        | Technologies Used 
 |--------------|------------------
-| Frontend     | HTML,CSS,JS
+| Frontend     | EJS,JS
 | Backend      | Node.js, Express 
 | Database     | MongoDB  |
-| Authentication  
+| Authentication |passport
 | Deployment   | Render 
+
+## 🛠 Deployment
+
+Deloyed/hosted on Render via GitHub
+
+Live Demo : https://wanderlust-project-vxti.onrender.com
+
+## Project intalation
+
+1. Clone the repository
+   
+https://github.com/rahul-techie002/Wanderlust_Project.git
+
+3. Install dependencies
+
+npm install --legacy-peer-deps
+
+3. Environment Setup
+
+create .env file in root directory mentain actual values variable key = value
+
+4. Run the project
+
+node App.js
+
+
+
+
+
+
+
 
