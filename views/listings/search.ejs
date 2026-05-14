@@ -12,8 +12,9 @@
 
                 <!-- Image Section -->
                 <div class="mb-4">
-                    <img src="<%= listing.image.url %>" class="img-fluid rounded" alt="<%= listing.title %>"
-                        style="object-fit: cover; height: 400px; width: 100%;">
+                    <div class="ratio ratio-16x9">
+                        <img src="<%= listing.image.url %>" class="img-fluid rounded" alt="<%= listing.title %>" style="object-fit: cover;">
+                    </div>
                 </div>
 
                 <!-- Title -->

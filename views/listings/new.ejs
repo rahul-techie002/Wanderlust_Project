@@ -1,81 +1,48 @@
 <% layout("layouts/boilerplate.ejs") %>
-    <div class="row ">
-        <div class="col-lg-10 col-md-12 col-sm-12  ">
-            <h3>Create New Listing</h3>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <h3 class="mb-3">Create New Listing</h3>
 
-            <form method="post" action="/listings/new" class="needs-validation" novalidate
-                enctype="multipart/form-data">
+            <form method="post" action="/listings/new" class="needs-validation" novalidate enctype="multipart/form-data">
 
                 <div class="mb-3">
-
-                    <label for="title" class="form-label">Title
-                        <input type="text" placeholder="enter title" name="listing[title]" id="title"
-                            class="form-control" required>
-                        <div class="invalid-feedback">please enter valid title! </div>
-                    </label>
-
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" placeholder="enter title" name="listing[title]" id="title" class="form-control" required>
+                    <div class="invalid-feedback">please enter valid title!</div>
                 </div>
 
                 <div class="mb-3">
-
-                    <label for="description" class="form-label">Description
-
-                        <textarea name="listing[description]" id="description" placeholder="entre description"
-                            class="form-control" required rows="1"></textarea>
-
-                        <div class="invalid-feedback">please enter sort description! </div>
-
-                    </label>
-
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" id="description" placeholder="enter description" class="form-control" required rows="4"></textarea>
+                    <div class="invalid-feedback">please enter short description!</div>
                 </div>
 
                 <div class="mb-3">
-
-                    <label for="image" class="form-label">Upload Image
-
-                        <input type="file" name="listing[image]" placeholder="enter image url" id="image"
-                            class="form-control" style="width: auto;" required>
-
-                    </label>
-
+                    <label for="image" class="form-label">Upload Image</label>
+                    <input type="file" name="listing[image]" placeholder="enter image url" id="image" class="form-control" required>
                 </div>
 
                 <div class="mb-3">
-
-                    <label for="location" class="form-label">Location
-                        <input type="text" name="listing[location]" placeholder="enter location" id="location"
-                            class="form-control" required>
-                        <div class="invalid-feedback">please enter valid location! </div>
-                    </label>
-
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" name="listing[location]" placeholder="enter location" id="location" class="form-control" required>
+                    <div class="invalid-feedback">please enter valid location!</div>
                 </div>
 
                 <div class="mb-3">
-
-                    <label for="number" class="form-label">Price
-                        <input type="number" name="listing[price]" id="number" placeholder="enter price"
-                            class="form-control" required>
-
-                        <div class="invalid-feedback">please enter valid price! </div>
-
-                    </label>
-
+                    <label for="number" class="form-label">Price</label>
+                    <input type="number" name="listing[price]" id="number" placeholder="enter price" class="form-control" required>
+                    <div class="invalid-feedback">please enter valid price!</div>
                 </div>
 
                 <div class="mb-3">
-
-                    <label for="country" class="form-label">Country
-                        <input type="text" name="listing[country]" placeholder="enter country name" id="country"
-                            class="form-control" required>
-                        <div class="invalid-feedback">please enter valid country name! </div>
-
-                    </label>
-
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" name="listing[country]" placeholder="enter country name" id="country" class="form-control" required>
+                    <div class="invalid-feedback">please enter valid country name!</div>
                 </div>
 
-                <br>
-                <button class="btn btn-dark">Submmit</button>
-
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-dark" type="submit">Submit</button>
+                </div>
             </form>
         </div>
     </div>
